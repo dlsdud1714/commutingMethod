@@ -1,23 +1,24 @@
 function Choosejacket(clothesOptions){
-const numberOfClothesToWear =clothesOptions.length;
-const randomIndex = Math.floor(numberOfClothesToWear*Math.random());
-const randomclothes = (clothesOptions[randomIndex]);
-return randomclothes
-}
-
-const paddedJacket = {name:"padded jacket", color:"black", weather:"severe winter"};
-const justShirt = {name:"just shirts", color:"blue", weather:"warm"};
-const coat = {name:"coat", color:"brown", weather:"moderate winter"};
-const withoutJacket = {name:"without Jacket", color:"None", weather:"summer"}
-
-const clothesToWear = [paddedJacket,justShirt,coat,withoutJacket];
-//const shirtIndex = clothesToWear.indexOf();
-
-function wearClothes(clothes){
-    console.log("Wear a ", clothes.name , ". Color is", clothes.color, ". Suit for", 
-    clothes.weather);
-}
-const randomclothes = Choosejacket(clothesToWear);
-
-module.exports={randomclothes, wearClothes};
-
+    const numberOfClothesToWear =clothesOptions.length;
+    const randomIndex = Math.floor(numberOfClothesToWear*Math.random());
+    const randomclothes = (clothesOptions[randomIndex]);
+    return randomclothes
+    }
+    
+    const paddedJacket = {name:"padded jacket", color:"black", weather:"severe winter"};
+    const justShirt = {name:"just shirts", color:"blue", weather:"warm"};
+    const coat = {name:"coat", color:"brown", weather:"moderate winter"};
+    const withoutJacket = {name:"without Jacket", color:"None", weather:"summer"}
+    
+    const clothesToWear = [paddedJacket,justShirt,coat,withoutJacket];
+    //const shirtIndex = clothesToWear.indexOf();
+    
+    function wearClothes(clothes){
+        console.log("Wear a ", clothes.name , ". Color is", clothes.color, ". Suit for", 
+        clothes.weather);
+    }
+    const randomvalue = Choosejacket(clothesToWear);
+    
+    module.exports={randomvalue, wearClothes};
+    
+    

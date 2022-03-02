@@ -3,7 +3,7 @@ const {
 } =require("./2_commutingMethodFunctions");
 
 const {
-    randomclothes, wearClothes
+    randomvalue, wearClothes
 }=require("./2_wearClothesFunction");
 
 function main(timeToPrepare, snowingOutside,accidentsOnMap,
@@ -11,7 +11,7 @@ function main(timeToPrepare, snowingOutside,accidentsOnMap,
     console.log("start");
     commutingMethod(timeToPrepare, snowingOutside,accidentsOnMap,
         roommateAwake)
-    wearClothes(randomclothes);    
+    wearClothes(randomvalue);    
     console.log("end");
 }
 
